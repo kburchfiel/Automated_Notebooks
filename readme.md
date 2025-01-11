@@ -1,13 +1,14 @@
 # Sharing Automatically-Updated Notebooks
 
 By Kenneth Burchfiel
+
 Released under the MIT License
 
-(Note: to view the final product of the steps shown in part 1, enable Colaboratory within your Google Drive account (if it's not already active), then visit https://colab.research.google.com/drive/1AmcSXI5ykszbQryyQmGkDhTg_PTG3m4A . This page shows an online copy of recent_weather_data.ipynb (whose source code can be found within this GitHub project) that used to get updated on an hourly basis. The following steps explain how I got this notebook to refresh automatically.)
+*(Note: to view the final product of the steps shown in part 1, enable Colaboratory within your Google Drive account (if it's not already active), then visit https://colab.research.google.com/drive/1AmcSXI5ykszbQryyQmGkDhTg_PTG3m4A . This page shows an online copy of recent_weather_data.ipynb (whose source code can be found within this GitHub project) that used to get updated on an hourly basis. The following steps explain how I got this notebook to refresh automatically.)*
 
 Let's say that you have a Jupyter Notebook that you wish to update automatically on a regular basis as new data becomes available. Let's also say that you want to automate the process of sharing these notebooks online so that others can view them also. This notebook demonstrates a few options for doing so.
 
-**Note:** In many cases, an online Dash app (covered within the Online Visualizations section of Python for Nonprofits) will be a better alternative to this workflow. This is because these options, though they do technically work, have some important limitations.
+**Note:** In many cases, an online Dash app will be a better alternative to this workflow. This is because these options, though they do technically work, have some important limitations. For an example of a Dash app that displays weather data similar to that found in this notebook, visit [this section of Python for Nonprofits](https://github.com/kburchfiel/pfn/tree/main/Online_Visualizations/Simple_App_Without_Login).
 
 
 ## Instructions
@@ -42,7 +43,7 @@ Note: in order to speed up rclone's performance, I recommend adding `--vfs-cache
 
 6. If you'd like to share the link to this Colab-hosted notebook with others, simply update the sharing permissions and then copy the link.
 
-# Part 2: Viewing HTML versions of notebooks via NBViewer (and automatically updating your GitHub repository in the process)
+### Part 2: Viewing HTML versions of notebooks via NBViewer (and automatically updating your GitHub repository in the process)
 
 HTML-based Plotly charts (and possibly other HTML data as well) *can* be viewed via NBViewer (https://nbviewer.org/). For example, you can view my recent_weather_data.ipynb notebook (along with its interactive Plotly charts) at nbviewer.org here: https://nbviewer.org/github/kburchfiel/recent_weather/blob/main/recent_weather.ipynb
 
